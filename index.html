@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>A Thousand Years — for Aisha</title>
+<meta name="theme-color" content="#09090F">
+<link rel="stylesheet" href="style.css">
+</head><body class="locked">
+<div id="loader" aria-hidden="true"><span>A Thousand Years</span></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="cursor" aria-hidden="true"></div>
+
+<section id="intro" aria-label="Opening">
+  <div class="glow"></div>
+  <img class="cutout" src="aisha-portrait-01.jpg" alt="Aisha smiling, in black and white">
+  <div class="intro-text">
+    <p class="quote">“Some people don’t just walk into your life; they quietly become a beautiful part of everything you are. And somehow, Aisha, you make even ordinary moments worth remembering.”</p>
+    <p class="sub">Tonight, the world gets to celebrate you. But I have a little something I made just for you.</p>
+    <button id="open" class="btn">Open your little world ✨</button>
+  </div>
+</section>
+
+<main id="main" hidden>
+<nav id="dots" aria-label="Sections"></nav>
+
+<section class="sec hero" id="hero" data-title="Home">
+  <div class="hero-bg" style="background-image:url(assets/aisha-portrait-01.jpg)"></div>
+  <div class="hero-in">
+    <h1>Happy Birthday,<br>my beautiful Aisha.</h1>
+    <p>Today, the universe has another reason to celebrate the beautiful soul that you are.</p>
+    <small>13.11.2026 — A day that deserves to be celebrated.</small>
+  </div>
+  <a class="scroll" href="#gallery" aria-label="Scroll down"><i></i></a>
+</section>
+
+<section class="sec" id="gallery" data-title="Gallery">
+  <h2>A little collection of my favourite person.</h2>
+  <p class="lede">Every picture tells a story, but somehow, none of them can fully capture how beautiful you are to me.</p>
+  <div class="grid solo">
+    <figure class="r"><img src="aisha-portrait-01.jpg" alt="Aisha smiling in black and white" loading="lazy"></figure>
+    <figure class="r"><img src="aisha-portrait-02.jpg" alt="Aisha in sunglasses and a blue patterned outfit" loading="lazy"></figure>
+    <figure class="r"><img src="aisha-portrait-03.jpg" alt="Aisha in a black headscarf and patterned outfit" loading="lazy"></figure>
+    <figure class="r"><img src="aisha-portrait-04.jpg" alt="Aisha's selfie in a vehicle" loading="lazy"></figure>
+    <figure class="r"><img src="aisha-fullbody.jpg" alt="Aisha outdoors in a black top and denim shorts" loading="lazy"></figure>
+  </div>
+  <h3>And then, there are the moments we share.</h3>
+  <p class="lede">Some of my favourite memories are not about where we were or what we were doing. They are simply about being there, with you.</p>
+  <div class="grid duo">
+    <figure class="r"><img src="us-together-01.jpg" alt="The two of us sitting close together" loading="lazy"></figure>
+    <figure class="r"><img src="us-together-02.jpg" alt="Me in a blue shirt, Aisha standing behind me" loading="lazy"></figure>
+    <figure class="r"><img src="us-together-03.jpg" alt="Aisha embracing me from behind" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="sec" id="letter" data-title="Letter">
+  <h2>A letter to Aisha</h2>
+  <button id="env" class="env" aria-expanded="false"><span class="flap"></span><span class="seal">A</span><em>Tap to open</em></button>
+  <article id="paper" class="paper" hidden aria-live="polite"><div id="lt"></div><p class="end" hidden>Forever grateful for you. ❤️<br><span>Yours, Always.</span></p></article>
+</section>
+
+<section class="sec" id="reasons" data-title="Reasons">
+  <h2>Ten little reasons you are so special.</h2>
+  <div class="cards" id="cards"></div>
+</section>
+
+<section class="sec night" id="wishes" data-title="Wishes">
+  <h2>If I could wish you a thousand things...</h2>
+  <ul id="wl"></ul>
+  <p class="r big">And even if I had a thousand years to wish you beautiful things, I would still have more to wish for.</p>
+</section>
+
+<section class="sec final" id="final" data-title="Finale">
+  <h2>And before you go...</h2>
+  <div class="fin r">
+    <p>If there is one thing I hope you never forget, it is that you are special. Not just because today is your birthday, but because you are you.</p>
+    <p>I hope this new year of your life is everything beautiful, and more.</p>
+    <p>Happy birthday, Afunlehin Aisha.</p>
+    <p>The world is lucky to have you in it. And I am grateful that my world gets to have you too.</p>
+  </div>
+  <figure class="r last"><img src="us-together-03.jpg" alt="The two of us" loading="lazy"></figure>
+  <p class="r sign">To my favourite human. ❤️</p>
+  <button id="replay" class="btn">Replay our little story</button>
+</section>
+</main>
+
+<div id="player" hidden>
+  <button id="pp" aria-label="Play or pause music">▶</button>
+  <div class="bar" aria-hidden="true"><i id="pg"></i></div>
+  <button id="mu" aria-label="Mute or unmute">♪</button>
+</div>
+<button id="top" aria-label="Back to top" hidden>↑</button>
+<div id="lb" hidden role="dialog" aria-label="Photo viewer"><img alt=""></div>
+<audio id="song" src="assets/a-thousand-years.mp3" preload="none" loop></audio>
+<script src="script.js"></script>
+</body></html>
